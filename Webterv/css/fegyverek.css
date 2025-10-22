@@ -1,0 +1,90 @@
+.fegyverek-section {
+    color: #c9c9ca;
+    padding: 20px 20px;
+}
+  
+.fegyverek-section h2 {
+    text-align: center;
+    margin-bottom: 0;
+}
+  
+.fegyver-lista {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+  
+.fegyver {
+    display: flex;
+    align-items: center;
+    background-color: #1a1a1a;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 4px 2px 10px #545557;
+    transition: transform 0.2s;
+}
+  
+.fegyver:hover {
+    transform: scale(1.02);
+}
+.fegyverek-section h3{
+    color: #e23b2d;
+}
+  
+.fegyver img {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-right: 20px;
+    background-color: #c9c9ca;
+    padding: 5px;
+    border-radius: 5px;
+}
+
+/* Zöld szöveg */
+.zöld-text {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+/*Navigáció*/ 
+.fegyver-nav {
+    text-align: center;
+    padding-top: 60px;
+}
+  
+.fegyver-nav ul {
+    list-style: none;
+    display: inline-flex;
+    gap: 20px;
+    padding: 0;
+    margin: 0;
+}
+  
+.fegyver-nav a {
+    text-decoration: none;
+    color: #c9c9ca;
+    padding: 12px 24px;
+    background: #040507;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: all 0.2s;
+}
+  
+.fegyver-nav a:hover {
+    background-color: #e23c2d;
+    color: #040507;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+@media (max-width: 600px) {
+    .fegyver{
+        margin: 0 auto 0 auto;
+    }
+    .fegyver img {
+        width: 70px;
+        height: 70px;
+    }
+}

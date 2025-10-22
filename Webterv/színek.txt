@@ -1,0 +1,3 @@
+gomb alap: #040507
+gomb hoover: #c9c9ca
+piros: #e23b2d

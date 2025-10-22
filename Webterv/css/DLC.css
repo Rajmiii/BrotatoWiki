@@ -1,0 +1,70 @@
+/*Hero kép csere*/
+.hero{
+    background-image: url('../Képek/DLC/Hero.png');
+}  
+
+/* Bal kép Blokk */
+.balkep_blokk-tartalom {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.balszöveg-blokk {
+  z-index: 999;
+  flex: 1;
+  background-color: #e23c2df3;
+  padding: 20px;
+  border-radius: 20px;
+  margin-left: -70px;
+  border: solid #040507 4px;
+}
+
+.balszöveg-blokk h2 {
+  font-size: 35px;
+  margin-bottom: 20px;
+}
+
+.balszöveg-blokk p {
+  margin-bottom: 20px;
+  color: #040507;
+}
+
+.balKép-block {
+  flex: 1;
+}
+
+.balKép-block img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 4px 2px 10px #545557;
+  border: solid #040507 4px;
+}
+
+/*Balkép blokk respo*/
+@media (max-width: 600px) {
+  .balkep_blokk-tartalom {
+    flex-direction: column-reverse;
+    text-align: center;
+  
+  }
+  .balszöveg-blokk {
+    width:60%;
+    max-width: 90%;
+    text-align: center;
+    margin: 0 auto -40px auto;
+  }
+  .balszöveg-blokk h2 {
+    font-size: 25px;
+  }
+  .balKép-block {
+    width: 100%;
+  }
+
+  .balKép-block img {
+    width: 100%;
+  }
+}

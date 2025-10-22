@@ -1,0 +1,67 @@
+.Ellenségek-section {
+  padding: 60px 20px;
+  color: #c9c9ca;
+  text-align: center;
+}
+  
+.Ellenségek-section h2 {
+  color: #e23c2d;
+  margin-bottom: 40px;
+}
+  
+.ellenség-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 40px;
+}
+
+/*grid respo*/
+@media (max-width: 900px) {
+  .ellenség-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 600px) {
+  .ellenség-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+/*Ellenségek kártya*/
+.ellenség-card {
+  background-color: #1a1a1a;
+  border-radius: 16px;
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 0 10px #0005;
+  transition: transform 0.3s;
+  overflow: hidden;
+}
+  
+.ellenség-card:hover {
+  transform: scale(1.03);
+  box-shadow: 0 0 20px #e23c2d88;
+}
+
+.ellenség-card img {
+  width: 100px;
+  height: 100px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
+
+.ellenség-leírás {
+  max-height: 0;
+  opacity: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, opacity 0.3s ease;
+  font-size: 0.9rem;
+  margin-top: 10px;
+}
+
+.ellenség-card:hover .ellenség-leírás {
+  max-height: 200px;
+  opacity: 1;
+}
+
